@@ -1,0 +1,47 @@
+# Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Build folders
+dist/
+build/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Ignore all markdown files except root README
+*.md
+!README.md
+
+# Ignore markdown inside client and server
+client/**/*.md
+server/**/*.md
+
+# Ignore package lock if you want
+# package-lock.json
+
+# Ignore misc project notes
+BONUS_FEATURES.md
+IMPLEMENTATION_SUMMARY.md
+plan.md
+QUICKSTART.md
+RUN_INSTRUCTIONS.md
+SQLITE_MIGRATION.md
+MIGRATION.md
