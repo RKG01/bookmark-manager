@@ -1,0 +1,117 @@
+.bookmark-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  transition: box-shadow 0.2s;
+}
+
+.bookmark-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bookmark-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmark-favicon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.bookmark-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.bookmark-title {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+.bookmark-url {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 8px;
+  word-break: break-all;
+}
+
+.bookmark-url:hover {
+  text-decoration: underline;
+}
+
+.bookmark-description {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.bookmark-meta {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.bookmark-category {
+  font-size: 0.85rem;
+  color: #6b7280;
+  background: #f3f4f6;
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.bookmark-visits {
+  font-size: 0.85rem;
+  color: #6b7280;
+  background: #fef3c7;
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.bookmark-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.btn-edit, .btn-delete {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-edit {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-edit:hover {
+  background: #2563eb;
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+}

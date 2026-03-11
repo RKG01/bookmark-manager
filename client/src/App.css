@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f9fafb;
+}
+
+.app-header {
+  background: white;
+  padding: 16px 24px;
+  border-bottom: 2px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+.app-content {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  flex: 1;
+  overflow: hidden;
+}
+
+.app-main {
+  background: white;
+  overflow-y: auto;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+.error-banner {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 12px 20px;
+  margin: 20px;
+  border-radius: 6px;
+  border-left: 4px solid #dc2626;
+}
+
+@media (max-width: 768px) {
+  .app-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-dark-mode {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.btn-dark-mode:hover {
+  background: #f3f4f6;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: #1a1a1a;
+  color: #e5e7eb;
+}
+
+body.dark-mode .app {
+  background: #1a1a1a;
+}
+
+body.dark-mode .app-header {
+  background: #2d2d2d;
+  border-bottom-color: #404040;
+}
+
+body.dark-mode .btn-dark-mode:hover {
+  background: #404040;
+}
+
+body.dark-mode .search-bar {
+  background: #2d2d2d;
+  border-bottom-color: #404040;
+}
+
+body.dark-mode .search-input,
+body.dark-mode .category-filter {
+  background: #1a1a1a;
+  border-color: #404040;
+  color: #e5e7eb;
+}
+
+body.dark-mode .category-sidebar {
+  background: #2d2d2d;
+  border-right-color: #404040;
+}
+
+body.dark-mode .sidebar-header {
+  border-bottom-color: #404040;
+}
+
+body.dark-mode .category-form {
+  background: #1a1a1a;
+  border-bottom-color: #404040;
+}
+
+body.dark-mode .category-form input {
+  background: #2d2d2d;
+  border-color: #404040;
+  color: #e5e7eb;
+}
+
+body.dark-mode .category-item:hover {
+  background: #404040;
+}
+
+body.dark-mode .category-item.active {
+  background: #1e3a5f;
+  color: #93c5fd;
+}
+
+body.dark-mode .category-count {
+  background: #404040;
+  color: #9ca3af;
+}
+
+body.dark-mode .category-item.active .category-count {
+  background: #1e40af;
+  color: #93c5fd;
+}
+
+body.dark-mode .app-main {
+  background: #1a1a1a;
+}
+
+body.dark-mode .bookmark-card {
+  background: #2d2d2d;
+  border-color: #404040;
+}
+
+body.dark-mode .bookmark-title {
+  color: #e5e7eb;
+}
+
+body.dark-mode .bookmark-description {
+  color: #9ca3af;
+}
+
+body.dark-mode .bookmark-category {
+  background: #404040;
+  color: #9ca3af;
+}
+
+body.dark-mode .bookmark-visits {
+  background: #422006;
+  color: #fbbf24;
+}
+
+body.dark-mode .modal-content {
+  background: #2d2d2d;
+  color: #e5e7eb;
+}
+
+body.dark-mode .modal-header {
+  border-bottom-color: #404040;
+}
+
+body.dark-mode .modal-close {
+  color: #9ca3af;
+}
+
+body.dark-mode .modal-close:hover {
+  color: #e5e7eb;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea,
+body.dark-mode .form-group select {
+  background: #1a1a1a;
+  border-color: #404040;
+  color: #e5e7eb;
+}
+
+body.dark-mode .btn-create-category {
+  background: #404040;
+  border-color: #404040;
+  color: #3b82f6;
+}
+
+body.dark-mode .btn-create-category:hover {
+  background: #4b5563;
+}
+
+body.dark-mode .empty-state h3 {
+  color: #e5e7eb;
+}
+
+body.dark-mode .empty-state p {
+  color: #9ca3af;
+}
